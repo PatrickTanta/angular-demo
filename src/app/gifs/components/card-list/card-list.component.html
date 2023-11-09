@@ -1,0 +1,15 @@
+<p>card-list works!</p>
+
+<div class="container mx-auto">
+    <div class="grid grid-cols-4 gap-6">
+        <div
+            *ngFor="let gif of gifs"
+            class="flex flex-col justify-center p-6 text-6xl bg-gray-100 border-2 border-gray-300 rounded-xl"
+        >
+            <img [src]="gif.images.downsized_medium.url" [alt]="gif.title" />"
+            <div class="text-base">
+                <p>{{ gif.title }}</p>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,7 @@
+{
+    "prettier.configPath": ".prettierrc",
+    "cSpell.words": [
+        "tailwindcss"
+    ],
+    "nuxt.isNuxtApp": false
+}
