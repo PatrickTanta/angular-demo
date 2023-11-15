@@ -1,10 +1,13 @@
 <div
     *ngIf="gif"
-    class="flex flex-col justify-center p-6 text-6xl bg-gray-100 border-2 border-gray-300 rounded-xl"
+    class="flex flex-col justify-center text-6xl bg-black opacity-80 border-2 border-gray-300 rounded-xl overflow-hidden"
 >
-    <img [src]="gif.images.downsized_medium.url" [alt]="gif.title" />"
+    <shared-lazy-image
+        [url]="gif.images.downsized_medium.url"
+        [alt]="gif.title || 'No name'"
+    ></shared-lazy-image>
 
-    <div class="text-base">
-        <p>{{ gif.title }}</p>
+    <div *ngIf="gif.title" class="text-base m-6">
+        <p class="text-white">{{ gif.title }}</p>
     </div>
 </div>

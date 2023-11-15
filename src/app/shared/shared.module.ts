@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core'
 import { SidebarComponent } from './components/sidebar/sidebar.component'
 import { CommonModule } from '@angular/common'
-import { WspIconComponent } from './components/wsp-icon/wsp-icon.component';
+import { WspIconComponent } from './components/wsp-icon/wsp-icon.component'
 import { LazyImageComponent } from './components/lazy-image/lazy-image.component'
 
 @NgModule({
     imports: [CommonModule],
-    exports: [SidebarComponent, WspIconComponent],
+    exports: [SidebarComponent, WspIconComponent, LazyImageComponent],
     declarations: [SidebarComponent, WspIconComponent, LazyImageComponent],
     providers: [],
 })
